@@ -1,0 +1,22 @@
+<!-- Se cambio de nombre al archivo de index.html a index.ejs y con esto le estamos diciendo que este archivo tendrá
+que se procesado por el motor de plantillas ejs para despues convertirse en un html. -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%=title%>
+    </title>
+    <% include partials/head.html %>
+    
+</head>
+
+<body>
+    <% include partials/navigation.html %>
+</body>
+
+</html>
